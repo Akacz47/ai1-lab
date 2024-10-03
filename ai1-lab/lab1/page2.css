@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 body {
     font-family: 'Courier New', monospace;
     background-color: #e0e0e0;
     margin: 0;
     padding: 0;
+	background-image: url('background2.jpg'); /* Ustawienie obrazu jako tła */
+    background-size: cover; /* Dopasowanie obrazu do całego obszaru */
+    background-position: center; /* Wyśrodkowanie obrazu */
+	font-size: 20px;
 }
 
 header {
@@ -10,6 +16,13 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+ul {
+    padding-left: 20px; /* Odstęp od lewej */
+    margin: 10px 0; /* Górny i dolny margines */
+    color: blue; /* Kolor tekstu */
+	font-size: 28px;
 }
 
 main {
@@ -21,10 +34,12 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+	
 }
 
 h1, h2, h3 {
     color: #333;
+	font-family: 'Playfair Display', serif;
 }
 
 p {

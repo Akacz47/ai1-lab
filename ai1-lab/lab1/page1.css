@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-	background-image: url('I:/ai/Ai1-lab/lab1/cpp.png'); /* Podaj ścieżkę do tła */
-    background-size: cover; /* Dopasowuje tło do rozmiaru okna */
-    background-repeat: no-repeat; /* Nie powtarza tła */
+	background-image: url('background.jpg'); /* Ustawienie obrazu jako tła */
+    background-size: cover; /* Dopasowanie obrazu do całego obszaru */
+    background-position: center; /* Wyśrodkowanie obrazu */
+	font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Tylko nagłówki h1 i h2 używają czcionki Pacifico */
 }
 
 header {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+}
+
+ul {
+	font-family: 'Pacifico', cursive;
+    padding-left: 20px; /* Odstęp od lewej */
+    margin: 10px 0; /* Górny i dolny margines */
+    color: red; /* Kolor tekstu */
+	font-size: 28px;
 }
 
 main {
@@ -21,6 +37,7 @@ footer {
     background-color: #f0f0f0;
     text-align: center;
     padding: 10px;
+	font-family: 'Pacifico', cursive;
 }
 
 @media (max-width: 600px) {
