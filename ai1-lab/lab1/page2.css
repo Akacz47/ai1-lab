@@ -46,8 +46,6 @@ ul li:nth-child(even) {
 }
 
 
-
-
 main {
     padding: 20px;
 }
@@ -78,4 +76,9 @@ h3{
 
 p {
     line-height: 1.6;
+}
+
+
+h2 {
+    border: 2px solid black; /* Dodanie obramowania */
 }

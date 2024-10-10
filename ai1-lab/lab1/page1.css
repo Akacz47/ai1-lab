@@ -27,6 +27,7 @@ ul {
     margin: 10px 0; /* Górny i dolny margines */
     color: red; /* Kolor tekstu */
 	font-size: 28px;
+	border: 2px solid black; /* Dodanie obramowania */
 }
 
 main {
