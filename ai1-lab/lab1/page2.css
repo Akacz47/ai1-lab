@@ -19,11 +19,34 @@ header {
 }
 
 ul {
-    padding-left: 20px; /* Odstęp od lewej */
-    margin: 10px 0; /* Górny i dolny margines */
-    color: blue; /* Kolor tekstu */
+    display: table;
+    width: 100%; /* Szerokość tabeli */
+    border-collapse: collapse; /* Usuń odstępy między komórkami */
+    margin: 0;
+    padding: 0;
+	color: blue;
 	font-size: 28px;
 }
+
+ul li {
+    display: table-row; /* Każdy element listy jako wiersz tabeli */
+    /*border: 1px solid #ccc; /* Obramowanie wiersza */
+}
+
+ul li::before {
+    content: ''; /* Usuń punktor listy */
+}
+
+ul li {
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+ul li:nth-child(even) {
+    background-color: #f93456; /* Zmiana tła co drugi wiersz */
+}
+
+
+
 
 main {
     padding: 20px;
@@ -40,13 +63,19 @@ footer {
 h1, h2, h3 {
     color: #333;
 	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+
+h1{
+	font-size: 70px;
+}
+h2{
+	font-size: 60px;
+}
+h3{
+	font-size: 50px;
 }
 
 p {
     line-height: 1.6;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
 }
