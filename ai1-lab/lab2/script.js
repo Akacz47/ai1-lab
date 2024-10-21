@@ -26,13 +26,19 @@ class Todo {
 	
 	// Dodawanie nowego zadania
     addTask(taskText, taskDate) {
+		
+		if(taskText.length < 3 || taskText.length > 255){
+			alert('Co najmniej 3 znaki, nie więcej niż 255 znaków')
+			return;
+		}
+		
         const task = {
             text: taskText,
             date: taskDate,
             completed: false,
         };
         this.tasks.push(task);
-		this.saveTasks();
+		//this.saveTasks();
         this.draw(); // Rysuje listę po dodaniu nowego zadania
     }
 	
@@ -40,14 +46,14 @@ class Todo {
     removeTask(index) {
         if (index > -1 && index < this.tasks.length) {
             this.tasks.splice(index, 1); // Usuwa zadanie z tablicy
-			this.saveTasks();
+			//this.saveTasks();
             this.draw(); // Rysuje listę po usunięciu zadania
         }
     }
 	
 	toggleComplete(index) {
         this.tasks[index].completed = !this.tasks[index].completed; // Zmienia status zadania
-		this.saveTasks();
+		//this.saveTasks();
         this.draw(); // Rysuje listę po zmianie statusu
     }
 	
@@ -56,7 +62,7 @@ class Todo {
         if (index > -1 && index < this.tasks.length) {
             this.tasks[index].text = newText; // Aktualizuje tekst zadania
             this.tasks[index].date = newDate; // Aktualizuje datę zadania
-			this.saveTasks();
+			//this.saveTasks();
             this.draw(); // Rysuje listę po edycji zadania
         }
     }
