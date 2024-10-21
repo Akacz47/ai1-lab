@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista z wyszukiwarką</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Lista przedmiotów</h1>
+	
+    <input type="search" id="searchInput" placeholder="Szukaj..." oninput="todo.filterList()">
+    
+    <ul id="taskList">
+        <li>
+			<div class="task-container">
+				<input type="checkbox"> 
+				<span class="task-text"> Przedmiot 1 </span>
+			</div>
+			<span class="date"> 20/10/2024</span> 
+			<button class="delete-btn" onclick="deleteItem(this)">Usuń</button>
+		</li>
+        
+		<li>
+			<div class="task-container">
+				<input type="checkbox">
+				<span class="task-text"> Przedmiot 2 </span>
+			</div>
+			<span class="date"> 20/10/2024</span>
+			<button class="delete-btn" onclick="deleteItem(this)">Usuń</button>
+		</li>
+        
+		<li>
+			<div class="task-container">
+				<input type="checkbox">
+				<span class="task-text"> Przedmiot 3 </span>
+			</div>
+			<span class="date"> 20/10/2024</span> 
+			<button class="delete-btn" onclick="deleteItem(this)">Usuń</button>
+		</li>
+    </ul>
+
+    <input type="text" id="newTaskInput" placeholder="Dodaj nowy przedmiot">
+	<input type="date" id="newDateInput">
+    <button id="addTaskBtn">Dodaj</button>
+	<button id="saveBtn">Zapisz</button>
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
